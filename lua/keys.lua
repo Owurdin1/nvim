@@ -5,7 +5,9 @@ local map = vim.api.nvim_set_keymap
 map('i', 'jk', '<Esc>', {})
 
 -- map ev to change/edit init.lua in split screen
-map('n', '<leader>ev', ':vsplit ~/.config/nvim/init.lua<CR>', {})
+-- This is the unix path!
+-- map('n', '<leader>ev', ':vsplit ~/.config/nvim/init.lua<CR>', {})
+map('n', '<leader>ev', ':vsplit ~/AppData/Local/nvim/init.lua<CR>', {})
 map('n', '<leader>sv', 'luafile %<CR>', {})
 
 -- Set the window navigation keys
