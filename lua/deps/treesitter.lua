@@ -5,6 +5,7 @@ return {
         "nvim-treesitter/nvim-treesitter",
         function()
             require( "nvim-treesitter.configs").setup {
+                require( "nvim-treesitter.install" ).compilers = { "llvm", "gcc", "cc" },
                 ensure_installed = {
                     "bash",
                     "c",
@@ -111,4 +112,3 @@ return {
         }
     }
 }
-
