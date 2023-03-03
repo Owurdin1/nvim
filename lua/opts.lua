@@ -19,6 +19,7 @@ opt.fileencoding = 'utf8'				-- str: File encoding to use
 opt.syntax = 'ON' 					-- str: Allow syntax highlighting
 opt.termguicolors = true 				-- bool: If term supports ui colors then enable
 opt.conceallevel = 0 					-- num: Option for conceal level
+vim.cmd( 'colorscheme torte' )                          -- str: Set colorscheme
 
 --[[ Search ]]
 opt.ignorecase = true					-- bool: Ignore case in search in patterns

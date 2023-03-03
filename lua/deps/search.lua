@@ -32,25 +32,6 @@ return {
         -- beacon to show cursor jumps
         "danilamihailov/beacon.nvim"
     },
-
---    -- quick buffer navigation
---    {
---        "ggandor/lightspeed.nvim",
---        requires = "tpope/vim-repeat",
---        function()
---            require("lightspeed").setup {
---                limit_ft_matches = 50,
---          }
---        end,
---    },
-
-    -- peek lines without jumping
---    {
---        "nacro90/numb.nvim",
---        function()
---            require("numb").setup()
---        end,
---    },
 }
 
 

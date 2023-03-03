@@ -87,7 +87,7 @@ return {
             {
             "nvim-treesitter/playground",
             function()
-                require("nvim-treesitter.configs").setup {
+                require( "nvim-treesitter.configs" ).setup {
                     playground = {
                         enable = true,
                     },
@@ -100,16 +100,53 @@ return {
 
             -- commenting engine using tree-sitter
             {
-                "JoosepAlviste/nvim-ts-context-commentstring",
-                function()
-                    require("nvim-treesitter.configs").setup {
-                        context_commentstring = {
-                            enable = true,
-                            enable_autocmd = false,
-                        },
-                    }
-                end,
+            "JoosepAlviste/nvim-ts-context-commentstring",
+            function()
+                require( "nvim-treesitter.configs" ).setup {
+                    context_commentstring = {
+                        enable = true,
+                        enable_autocmd = false,
+                    },
+                }
+            end,
             },
         }
-    }
+    },
+
+    {
+    "stevearc/aerial.nvim",
+        function() 
+            require( "aerial" ).setup {
+                layout = {
+                      max_width = { 60, 0.2 },
+                      width = nil,
+                      min_width = 20,
+                },
+
+                close_automatic_events = {
+                    "unfocus",
+                    "switch_buffer",
+                    "unsupported",
+                },
+
+                filter_kind = {
+                    "Array",
+                    "Class",
+                    "Constructor",
+                    "Enum",
+                    "Function",
+                    "Interface",
+                    "Module",
+                    "Method",
+                    "Property",
+                    "Struct",
+                },
+
+                default_direction = "right",
+                highlight_on_hover = true,
+                highlight_on_jump = 1000,
+                close_on_select = true,
+            }
+      end,
+    },
 }

@@ -8,7 +8,8 @@ map('i', 'jk', '<Esc>', {})
 -- This is the unix path!
 -- map('n', '<leader>ev', ':vsplit ~/.config/nvim/init.lua<CR>', {})
 map('n', '<leader>ev', ':vsplit ~/AppData/Local/nvim/init.lua<CR>', {})
-map('n', '<leader>sv', 'luafile %<CR>', {})
+map('n', '<leader>sv', ':luafile ~/AppData/Local/nvim/init.lua<CR>', {})
+map('n', '<leader>ep', ':vsplit ~/.profile<CR>', {})
 
 -- Set the window navigation keys
 map('n', '<leader>h', '<c-w>h', {})
@@ -39,18 +40,23 @@ map('n', '<leader><space>', ':noh<cr>', {})
 
 -- Set F1 to show current directory
 map('n', '<F1>', ':pwd<cr>', {})
+map('n', '<F2>', ':cd d:/git/gtr/sw_dev<cr>', {})
 
 -- [[ nvim-tree keymaps ]]
-map('n', '<leader>nf', ':NvimTreeFindFile<cr>', {})
+map('n', '<leader>nf', ':NvimTreeFindFile!<cr>', {})
 map('n', '<leader>nn', ':NvimTreeToggle<cr>', {})
+map('n', '<leader>nw', ':NvimTreeToggle d:/git/gtr/sw_dev<cr>', {})
 
 -- [[ telescope keymaps ]]
 map('n', '<leader>ff', ":Telescope find_files<cr>", {})
 map('n', '<leader>fg', ":Telescope live_grep<cr>", {})
 map('n', '<leader>fb', ":Telescope buffers<cr>", {})
 
+--[[ aerial keymaps ]]
+map('n', '<leader>yy', ":AerialToggle<cr>", {})
 
-
+--[[ run ctags ]]
+map('n', '<F12>', ':!start /b ctags.exe -R --languages=c,c++ --excmd=n . <cr>', {})
 
 
 
