@@ -58,5 +58,8 @@ map('n', '<leader>yy', ":AerialToggle<cr>", {})
 --[[ run ctags ]]
 map('n', '<F12>', ':!start /b ctags.exe -R --languages=c,c++ --excmd=n . <cr>', {})
 
-
+--[[ fugitive keymaps ]]
+map('n', '<leader>gb', ':Git blame<cr>', {})
+map('n', '<leader>gl', ':0Gclog!<cr>', {})
+map('n', '<leader>gm', ':Gvdiffsplit! origin/master<cr>', {})
 
