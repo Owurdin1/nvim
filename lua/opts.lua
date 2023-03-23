@@ -58,6 +58,10 @@ opt.backspace = 'indent,eol,start'                      -- str: Set the backspac
 
 --[[ Diff Options ]]
 opt.diffopt = 'vertical,internal,filler,closeoff,followwrap' 
+
+--[[ Cursorline options ]]
+opt.cursorline = true
+opt.cursorlineopt = 'line,both'
                                                         -- str: Set the diff options to use followwrap, filler
                                                         -- closeoff, internal diff, and be vertical split.
                                                         -- Check :help diffopt for reference to these options

@@ -41,12 +41,26 @@ return {
                             },
                         },
                     },
+
                     live_grep = {
                         glob_pattern = { 
                             "!tmpl*.h", 
-                            "!tmpl*.c" 
+                            "!tmpl*.c",
+                            "!*.ipynb",
+                            "!*.vcxproj.*",
+                            "!*.vcxproj",
                         }
                     },
+
+                    -- grep_string = {
+                    --     -- search_dirs = { 
+                    --     --     "!tmpl*.h", 
+                    --     --     "!tmpl*.c",
+                    --     --     "!*.ipynb",
+                    --     --     "!*.vcxproj.*",
+                    --     --     "!*.vcxproj",
+                    --     -- }
+                    -- },
                 },
             }
         end,

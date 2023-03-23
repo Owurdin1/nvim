@@ -41,6 +41,7 @@ map('n', '<leader><space>', ':noh<cr>', {})
 -- Set F1 to show current directory
 map('n', '<F1>', ':pwd<cr>', {})
 map('n', '<F2>', ':cd d:/git/gtr/sw_dev<cr>', {})
+map('n', '<F3>', ':cd %:h<cr>', {})
 
 -- [[ nvim-tree keymaps ]]
 map('n', '<leader>nf', ':NvimTreeFindFile!<cr>', {})
@@ -51,6 +52,7 @@ map('n', '<leader>nw', ':NvimTreeToggle d:/git/gtr/sw_dev<cr>', {})
 map('n', '<leader>ff', ":Telescope find_files<cr>", {})
 map('n', '<leader>fg', ":Telescope live_grep<cr>", {})
 map('n', '<leader>fb', ":Telescope buffers<cr>", {})
+map('n', '<F4>', ":Telescope grep_string<cr>", {})
 
 --[[ aerial keymaps ]]
 map('n', '<leader>yy', ":AerialToggle<cr>", {})
