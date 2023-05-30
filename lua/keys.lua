@@ -53,6 +53,8 @@ map('n', '<leader>ff', ":Telescope find_files<cr>", {})
 map('n', '<leader>fg', ":Telescope live_grep<cr>", {})
 map('n', '<leader>fb', ":Telescope buffers<cr>", {})
 map('n', '<F4>', ":Telescope grep_string<cr>", {})
+map('n', '<leader>gc', ":Telescope git_commits<cr>", {})
+map('n', '<leader>gf', ":Telescope git_files<cr>", {})
 
 --[[ aerial keymaps ]]
 map('n', '<leader>yy', ":AerialToggle<cr>", {})
@@ -64,4 +66,5 @@ map('n', '<F12>', ':!start /b ctags.exe -R --languages=c,c++ --excmd=n . <cr>', 
 map('n', '<leader>gb', ':Git blame<cr>', {})
 map('n', '<leader>gl', ':0Gclog!<cr>', {})
 map('n', '<leader>gm', ':Gvdiffsplit! origin/master<cr>', {})
+map('n', '<leader>gs', ':Git<cr>', {})
 
