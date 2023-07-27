@@ -13,12 +13,19 @@ return {
             -- },
             function()
                 require("mason").setup()
-                require("mason-lspconfig").setup()
+                require("mason-lspconfig").setup {
+                
+                    ensure_installed = { "lua_ls", "clangd" },
+                    }
                 -- require("nvim-lspconfig").setup()
 
                 require("mason-lspconfig").setup_handlers {
                     function(clangd)
                         require("lspconfig").clangd.setup {}
+                    end,
+
+                    function(lua_ls)
+                        require("lspconfig").lua_ls.setup {}
                     end,
 
                     -- ["clangd"] = function()
