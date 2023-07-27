@@ -3,10 +3,14 @@
 return {
     {
         "williamboman/mason.nvim",
-            deps = {
-                 requires = "williamboman/mason-lspconfig.nvim",
-                 "neovim/nvim-lspconfig",
-            },
+        requires = {
+             requires = "williamboman/mason-lspconfig.nvim",
+             "neovim/nvim-lspconfig",
+        },
+            -- deps = {
+            --      requires = "williamboman/mason-lspconfig.nvim",
+            --      "neovim/nvim-lspconfig",
+            -- },
             function()
                 require("mason").setup()
                 require("mason-lspconfig").setup()
@@ -14,7 +18,7 @@ return {
 
                 require("mason-lspconfig").setup_handlers {
                     function(clangd)
-                        -- require("lspconfig").clangd.setup {}
+                        require("lspconfig").clangd.setup {}
                     end,
 
                     -- ["clangd"] = function()
