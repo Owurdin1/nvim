@@ -18,21 +18,23 @@ vim.g.localleader = "\\"
 require('vars') 			-- Variables
 require('opts')				-- Options
 require('keys')				-- Keymaps
+require('plugin_config.plugin_config')
 require('bootstrap')                    -- Start dep bootstrap
-require('dep') {
-    -- list of package specs...
-    modules = {
-        prefix = 'deps.',
-        "comments",
-        "debugging",
-        "lsp",
-        "nvim_tree",
-        "statusline",
-        "search",
-        "startify",
-        "treesitter",
-        "version_control",
-        "vimwiki",
-    },
-}
+
+-- require('dep') {
+--     -- list of package specs...
+--     modules = {
+--         prefix = 'deps.',
+--         "comments",
+--         "debugging",
+--         "lsp",
+--         "nvim_tree",
+--         "statusline",
+--         "search",
+--         "startify",
+--         "treesitter",
+--         "version_control",
+--         "vimwiki",
+--     },
+-- }
 

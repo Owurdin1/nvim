@@ -1,4 +1,10 @@
 --[[ keys.lua ]]
+
+--[[ Global settings for vim ]]
+--vim.g.loaded_netrw = 1
+--vim.g.loaded_netrwPlugin = 1
+
+--[[ File Global Values ]]
 local map = vim.api.nvim_set_keymap
 
 --remap the key used to leave insert mode
@@ -47,6 +53,7 @@ map('n', '<F3>', ':cd %:h<cr>', {})
 map('n', '<leader>nf', ':NvimTreeFindFile!<cr>', {})
 map('n', '<leader>nn', ':NvimTreeToggle<cr>', {})
 map('n', '<leader>nw', ':NvimTreeToggle d:/git/gtr/sw_dev<cr>', {})
+map( 'n', '<c-n>', ':NvimTreeFindFileToggle<CR>', {} )
 
 -- [[ telescope keymaps ]]
 map('n', '<leader>ff', ":Telescope find_files<cr>", {})
@@ -55,6 +62,7 @@ map('n', '<leader>fb', ":Telescope buffers<cr>", {})
 map('n', '<F4>', ":Telescope grep_string<cr>", {})
 map('n', '<leader>gc', ":Telescope git_commits<cr>", {})
 map('n', '<leader>gf', ":Telescope git_files<cr>", {})
+map( 'n', '<leader>fh', ':Telescope help_tags<CR>', {} )
 
 --[[ aerial keymaps ]]
 map('n', '<leader>yy', ":AerialToggle<cr>", {})

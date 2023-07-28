@@ -1,4 +1,6 @@
 --[[ opts.lua ]]
+
+--[[ File Global Values ]]
 local opt = vim.opt
 local cmd = vim.api.nvim_command
 
@@ -19,7 +21,8 @@ opt.fileencoding = 'utf8'				-- str: File encoding to use
 opt.syntax = 'ON' 					-- str: Allow syntax highlighting
 opt.termguicolors = true 				-- bool: If term supports ui colors then enable
 opt.conceallevel = 0 					-- num: Option for conceal level
-vim.cmd( 'colorscheme torte' )                          -- str: Set colorscheme
+-- vim.cmd( 'colorscheme torte' )                          -- str: Set colorscheme
+--vim.cmd( 'colorscheme delek' )                          -- str: Set colorscheme
 
 --[[ Search ]]
 opt.ignorecase = true					-- bool: Ignore case in search in patterns
@@ -66,7 +69,9 @@ opt.cursorlineopt = 'line,both'
                                                         -- closeoff, internal diff, and be vertical split.
                                                         -- Check :help diffopt for reference to these options
 
-
+--[[ File update for buffer ]]
+opt.autoread = true                                     -- bool: Set the autoread to update buffer when
+                                                        -- file changes
 
 
 
