@@ -46,14 +46,14 @@ map('n', '<leader><space>', ':noh<cr>', {})
 
 -- Set F1 to show current directory
 map('n', '<F1>', ':pwd<cr>', {})
-map('n', '<F2>', ':cd d:/git/gtr/sw_dev<cr>', {})
-map('n', '<F3>', ':cd %:h<cr>', {})
+map('n', '<leader>wd', ':cd d:/git/gtr/sw_dev<cr>', {})
+map('n', '<leader>cd', ':cd %:h<cr>', {})
 
 -- [[ nvim-tree keymaps ]]
 map('n', '<leader>nf', ':NvimTreeFindFile!<cr>', {})
 map('n', '<leader>nn', ':NvimTreeToggle<cr>', {})
 map('n', '<leader>nw', ':NvimTreeToggle d:/git/gtr/sw_dev<cr>', {})
-map( 'n', '<c-n>', ':NvimTreeFindFileToggle<CR>', {} )
+map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>', {})
 
 -- [[ telescope keymaps ]]
 map('n', '<leader>ff', ":Telescope find_files<cr>", {})
@@ -75,4 +75,11 @@ map('n', '<leader>gb', ':Git blame<cr>', {})
 map('n', '<leader>gl', ':0Gclog!<cr>', {})
 map('n', '<leader>gm', ':Gvdiffsplit! origin/master<cr>', {})
 map('n', '<leader>gs', ':Git<cr>', {})
+
+--[[ undotree keymaps ]]
+map('n', '<leader>u', ':UndotreeToggle<cr>', {})
+
+--[[ Spruce up the Paste!]]
+map('x', '<leader>p', '\'_dP', {})
+
 
