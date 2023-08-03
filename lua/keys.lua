@@ -12,9 +12,8 @@ map('i', 'jk', '<Esc>', {})
 
 -- map ev to change/edit init.lua in split screen
 -- This is the unix path!
--- map('n', '<leader>ev', ':vsplit ~/.config/nvim/init.lua<CR>', {})
 map('n', '<leader>ev', ':vsplit ~/AppData/Local/nvim/init.lua<CR>', {})
-map('n', '<leader>sv', ':luafile ~/AppData/Local/nvim/init.lua<CR>', {})
+map('n', '<leader>sv', ':so ~/AppData/Local/nvim/init.lua<CR>', {})
 map('n', '<leader>ep', ':vsplit ~/.profile<CR>', {})
 
 -- Set the window navigation keys
@@ -59,7 +58,7 @@ map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>', {})
 map('n', '<leader>ff', ":Telescope find_files<cr>", {})
 map('n', '<leader>fg', ":Telescope live_grep<cr>", {})
 map('n', '<leader>fb', ":Telescope buffers<cr>", {})
-map('n', '<F4>', ":Telescope grep_string<cr>", {})
+map('n', '<leader>fs', ":Telescope grep_string<cr>", {})
 map('n', '<leader>gc', ":Telescope git_commits<cr>", {})
 map('n', '<leader>gf', ":Telescope git_files<cr>", {})
 map( 'n', '<leader>fh', ':Telescope help_tags<CR>', {} )

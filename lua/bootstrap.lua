@@ -31,9 +31,6 @@ return require('packer').startup(function(use)
             }
         }
 
-
-
-
     use 'wbthomason/packer.nvim'
     use 'ellisonleao/gruvbox.nvim'
     use 'nvim-tree/nvim-tree.lua'
@@ -42,17 +39,10 @@ return require('packer').startup(function(use)
     use 'nvim-treesitter/nvim-treesitter'
     use 'mbbill/undotree'
     use 'tpope/vim-fugitive'
-
-
-
---  use 'hrsh7th/nvim-cmp'
---  use 'hrsh7th/cmp-nvim-lsp'
-
---  use {
---      'williamboman/mason.nvim',
---      'williamboman/mason-lspconfig.nvim',
---      'neovim/nvim-lspconfig',
---      }
+    use 'mhinz/vim-startify'
+    use 'danilamihailov/beacon.nvim' -- Check the help doc for this to make it nicer with the avaialble options
+    use 'stevearc/aerial.nvim'
+    use 'numToStr/Comment.nvim'
 
     use {
         'nvim-telescope/telescope.nvim',
@@ -65,23 +55,7 @@ return require('packer').startup(function(use)
   if packer_bootstrap then
     require('packer').sync()
   end
+
 end)
-
-
-
--- automatically install 'chiyadev/dep' on startup
--- local path = vim.fn.stdpath("data") .. "/site/pack/deps/opt/dep"
--- /site/pack/deps/opt/dep/lua-language-server/bin" -- This is the path to the lua-langauge-server
-
--- if vim.fn.empty(vim.fn.glob(path)) > 0 then
---     vim.fn.system({"git", "clone", "--depth=1", "https://github.com/chiyadev/dep", path})
--- end
-
--- vim.cmd("packadd dep")
-
-
-
-
-
 
 

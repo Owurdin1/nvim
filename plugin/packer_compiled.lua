@@ -74,10 +74,25 @@ end
 time([[try_loadstring definition]], false)
 time([[Defining packer_plugins]], true)
 _G.packer_plugins = {
+  ["Comment.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\Comment.nvim",
+    url = "https://github.com/numToStr/Comment.nvim"
+  },
   LuaSnip = {
     loaded = true,
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
+  },
+  ["aerial.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\aerial.nvim",
+    url = "https://github.com/stevearc/aerial.nvim"
+  },
+  ["beacon.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\beacon.nvim",
+    url = "https://github.com/danilamihailov/beacon.nvim"
   },
   ["cmp-nvim-lsp"] = {
     loaded = true,
@@ -158,6 +173,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-fugitive",
     url = "https://github.com/tpope/vim-fugitive"
+  },
+  ["vim-startify"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-startify",
+    url = "https://github.com/mhinz/vim-startify"
   }
 }
 
