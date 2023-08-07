@@ -11,16 +11,24 @@ require('aerial').setup {
         "unsupported",
         },
 
+    -- filter_kind = false, -- I know this works but things can get pretty noisy.
+
+
     filter_kind = {
-        --"Array",
+        "Array",
+        -- "Boolean",
         "Class",
+        "Constant",
         "Constructor",
-        --"Enum",
-        "Funtion",
+        "Enum",
+        -- "EnumMember",
+        -- "Event",
+        -- "Field", -- actually displays things, but nothing I want in teh Aerial list!
+        "Function",
         "Interface",
         "Module",
         "Method",
-        --"Property",
+        "Property",
         "Struct",
         },
 

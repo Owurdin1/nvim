@@ -44,7 +44,7 @@ map('n', '<c-s>', ':w<cr>', {})
 map('n', '<leader><space>', ':noh<cr>', {})
 
 -- Set F1 to show current directory
-map('n', '<F1>', ':pwd<cr>', {})
+map('n', '<leader>pd', ':pwd<cr>', {})
 map('n', '<leader>wd', ':cd d:/git/gtr/sw_dev<cr>', {})
 map('n', '<leader>cd', ':cd %:h<cr>', {})
 

@@ -99,6 +99,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  ["everforest-nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\everforest-nvim",
+    url = "https://github.com/neanias/everforest-nvim"
+  },
   ["gruvbox.nvim"] = {
     loaded = true,
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\gruvbox.nvim",
@@ -123,6 +128,16 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
+  },
+  ["material.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\material.nvim",
+    url = "https://github.com/marko-cerovac/material.nvim"
+  },
+  neon = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\neon",
+    url = "https://github.com/rafamadriz/neon"
   },
   ["nvim-cmp"] = {
     loaded = true,
@@ -178,6 +193,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vim-startify",
     url = "https://github.com/mhinz/vim-startify"
+  },
+  vimwiki = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\vimwiki",
+    url = "https://github.com/vimwiki/vimwiki"
   }
 }
 

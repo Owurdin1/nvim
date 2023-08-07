@@ -21,8 +21,20 @@ opt.fileencoding = 'utf8'				-- str: File encoding to use
 opt.syntax = 'ON' 					-- str: Allow syntax highlighting
 opt.termguicolors = true 				-- bool: If term supports ui colors then enable
 opt.conceallevel = 0 					-- num: Option for conceal level
+
+-- vim.o.background='light'
+vim.o.background='dark'
+
+vim.g.neon_style = "light"
+vim.g.material_style = "lighter"
+-- vim.g.material_style = "palenight"
+
+-- vim.cmd('colorscheme everforest')                       -- str: Set colorscheme
+-- vim.cmd('colorscheme gruvbox')                         -- str: Set colorscheme
+-- vim.cmd('colorscheme material')                         -- str: Set colorscheme
+-- vim.cmd('colorscheme neon')                             -- str: Set colorscheme
 -- vim.cmd( 'colorscheme torte' )                          -- str: Set colorscheme
---vim.cmd( 'colorscheme delek' )                          -- str: Set colorscheme
+vim.cmd( 'colorscheme delek' )                          -- str: Set colorscheme
 
 --[[ Search ]]
 opt.ignorecase = true					-- bool: Ignore case in search in patterns
@@ -72,8 +84,6 @@ opt.cursorlineopt = 'line,both'
 --[[ File update for buffer ]]
 opt.autoread = true                                     -- bool: Set the autoread to update buffer when
                                                         -- file changes
-
-
 
 
 

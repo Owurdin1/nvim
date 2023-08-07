@@ -2,7 +2,9 @@ require('lualine').setup {
     options = {
         icons_enabled = true,
         -- theme = 'gruvbox',
-        theme = 'dracula',
+        theme = 'onelight',
+        -- theme = 'neon',
+        -- theme = 'dracula',
         -- theme = 'onelight',
     },
     sections = {

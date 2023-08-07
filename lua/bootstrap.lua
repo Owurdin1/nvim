@@ -40,9 +40,13 @@ return require('packer').startup(function(use)
     use 'mbbill/undotree'
     use 'tpope/vim-fugitive'
     use 'mhinz/vim-startify'
-    use 'danilamihailov/beacon.nvim' -- Check the help doc for this to make it nicer with the avaialble options
+    use 'danilamihailov/beacon.nvim'
     use 'stevearc/aerial.nvim'
     use 'numToStr/Comment.nvim'
+    use 'rafamadriz/neon'
+    use 'marko-cerovac/material.nvim'
+    use 'vimwiki/vimwiki'
+    use 'neanias/everforest-nvim'
 
     use {
         'nvim-telescope/telescope.nvim',

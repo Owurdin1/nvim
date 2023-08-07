@@ -2,7 +2,7 @@ local lsp = require('lsp-zero')
 
 lsp.preset('recommended')
 
-lsp.ensure_installed({ 'lsp_lua', 'cland' })
+lsp.ensure_installed({ 'lua_ls', 'clangd' })
 
 local cmp = require('cmp')
 local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -22,12 +22,18 @@ lsp.on_attach(function(client, bufnr)
 
     vim.keymap.set('n', 'gd', function() vim.lsp.buf.definition() end, opts)
     vim.keymap.set('n', 'K', function() vim.lsp.buf.hover() end, opts)
-    vim.keymap.set('n', '<leader>ws', function() vim.lsp.buf.workspace_symbol() end, opts)
+
+    -- vim.keymap.set('n', '<leader>ws', function() vim.lsp.buf.workspace_symbol() end, opts)
+
     vim.keymap.set('n', '<leader>vd', function() vim.diagnostic.open_float() end, opts)
     vim.keymap.set('n', '<leader>[d', function() vim.diagnostic.goto_next() end, opts)
     vim.keymap.set('n', '<leader>]d', function() vim.diagnostic.goto_prev() end, opts)
     vim.keymap.set('n', '<leader>ca', function() vim.lsp.buf.code_action() end, opts)
-    vim.keymap.set('n', '<leader>gr', function() vim.lsp.buf.references() end, opts)
+    -- vim.keymap.set('n', '<leader>gr', function() vim.lsp.buf.references() end, opts)
+
+   vim.keymap.set('n', '<leader>gr', require('telescope.builtin').lsp_references, {})
+
+
     vim.keymap.set('n', '<leader>rn', function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set('i', '<C-h>', function() vim.lsp.buf.signature_help() end, opts)
 
