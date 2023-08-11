@@ -6,4 +6,4 @@ g.background = "dark"
 ColorScheme = "torte"
 
 
---g.python3_host_prog = 'C:\\python37\\python.exe'
+g.python3_host_prog = 'C:\\python37\\python.exe'
