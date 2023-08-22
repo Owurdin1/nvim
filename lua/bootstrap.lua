@@ -48,6 +48,18 @@ return require('packer').startup(function(use)
     use 'vimwiki/vimwiki'
     use 'neanias/everforest-nvim'
 
+    -- use 's1n7ax/nvim-comment-frame'
+
+    -- use {
+    --     's1n7ax/nvim-comment-frame',
+    --     requires = {
+    --         { 'nvim-treesitter' }
+    --         },
+    --         config = function()
+    --             require('nvim-comment-frame').setup()
+    --         end
+    --     }
+
     use {
         'nvim-telescope/telescope.nvim',
         tag = '0.1.2',

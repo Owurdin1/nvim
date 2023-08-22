@@ -20,6 +20,7 @@ require('opts')				-- Options
 require('keys')				-- Keymaps
 require('plugin_config.plugin_config')
 require('bootstrap')                    -- Start dep bootstrap
+-- require('comments.plugin.comments')
 
 -- require('dep') {
 --     -- list of package specs...
