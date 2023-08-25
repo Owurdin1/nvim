@@ -99,10 +99,20 @@ _G.packer_plugins = {
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp-nvim-lsp",
     url = "https://github.com/hrsh7th/cmp-nvim-lsp"
   },
+  cmp_luasnip = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\cmp_luasnip",
+    url = "https://github.com/saadparwaiz1/cmp_luasnip"
+  },
   ["everforest-nvim"] = {
     loaded = true,
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\everforest-nvim",
     url = "https://github.com/neanias/everforest-nvim"
+  },
+  ["friendly-snippets"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\friendly-snippets",
+    url = "https://github.com/rafamadriz/friendly-snippets"
   },
   ["gruvbox.nvim"] = {
     loaded = true,

@@ -25,12 +25,21 @@ return require('packer').startup(function(use)
                 {'williamboman/mason-lspconfig.nvim'}, -- Optional
 
                 -- Autocompletion
-                {'hrsh7th/nvim-cmp'},     -- Required
+                { 'hrsh7th/nvim-cmp' },     -- Required
                 {'hrsh7th/cmp-nvim-lsp'}, -- Required
                 {'L3MON4D3/LuaSnip'},     -- Required
             }
         }
 
+    use { 
+        'L3MON4D3/LuaSnip',
+        tag = 'v2.0.0',
+        run = 'make install_jsregexp',
+        dependencies = { "rafamadriz/friendly-snippets" },
+        }
+
+    use "saadparwaiz1/cmp_luasnip"
+    use "rafamadriz/friendly-snippets"
     use 'wbthomason/packer.nvim'
     use 'ellisonleao/gruvbox.nvim'
     use 'nvim-tree/nvim-tree.lua'
@@ -47,18 +56,6 @@ return require('packer').startup(function(use)
     use 'marko-cerovac/material.nvim'
     use 'vimwiki/vimwiki'
     use 'neanias/everforest-nvim'
-
-    -- use 's1n7ax/nvim-comment-frame'
-
-    -- use {
-    --     's1n7ax/nvim-comment-frame',
-    --     requires = {
-    --         { 'nvim-treesitter' }
-    --         },
-    --         config = function()
-    --             require('nvim-comment-frame').setup()
-    --         end
-    --     }
 
     use {
         'nvim-telescope/telescope.nvim',

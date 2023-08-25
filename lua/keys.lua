@@ -10,65 +10,12 @@ local map = vim.api.nvim_set_keymap
 --remap the key used to leave insert mode
 map('i', 'jk', '<Esc>', {})
 
+-- Garmin Comment keymaps
+vim.api.nvim_set_keymap('n', '<Leader>ci', ':lua Garmin_Comment()<CR>', { noremap = true, silent = true })
 
--- Define the function to print a string to a buffer
--- function Garmin_Comment(text)
---
---     local current_line = vim.fn.line('.')
---     local current_col = vim.fn.col('.')
---     local indent_index = current_col / 4
---
---     local comment_block = {} -- = '\n/*---------------------------------------------------------------------------- \n\n----------------------------------------------------------------------------*/\n\n'
---
---     comment_block[ 0 ] = '\n/*---------------------------------------------------------------------------- \n\n----------------------------------------------------------------------------*/\n\n'
---
---     -- if current_col == indent_index then
---     comment_block[ 1 ] =  '\n    /*------------------------------------------------------------------------ \n\n    ------------------------------------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 4 then
---     comment_block[ 2 ]=  '\n        /*-------------------------------------------------------------------- \n\n        --------------------------------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 8 then
---     comment_block[ 3 ] =   '\n            /*---------------------------------------------------------------- \n\n            ----------------------------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 12 then
---     comment_block[ 4 ] =   '\n                /*------------------------------------------------------------ \n\n                ------------------------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 16 then
---     comment_block[ 5 ] =   '\n                    /*-------------------------------------------------------- \n\n                    --------------------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 20 then
---     comment_block[ 6 ] =   '\n                        /*---------------------------------------------------- \n\n                        ----------------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 24 then
---     comment_block[ 7 ] =   '\n                            /*------------------------------------------------ \n\n                            ------------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 28 then
---     comment_block[ 8 ] =   '\n                                /*-------------------------------------------- \n\n                                --------------------------------------------*/\n\n'
---     -- elseif current_col == indent_index + 32 then
---     comment_block[ 9 ] =   '\n                                    /*---------------------------------------- \n\n                                    ----------------------------------------*/\n\n'
---     -- end
---
---     local lines = vim.fn.split(comment_block[ indent_index ], '\n')
---
---     vim.api.nvim_buf_set_text(0, current_line - 1, current_col - 1, current_line - 1, current_col - 1, lines)
---
---     -- vim.api.nvim_buf_set_lines(0, current_line - 1, current_line, true, {text})
---     -- vim.api.nvim_buf_set_lines(0, current_line - 1, current_line, true, lines)
---
---     local num_lines_to_shift = #lines
---
---     -- for i, line in ipairs(lines) do
---     for i = current_line - 1, current_line + num_lines_to_shift - 2, -1 do
---         local line_text = vim.api.nvim_buf_get_lines(0, i, i + 1, false)[ 1 ]
---
---         vim.api.nvim_buf_set_lines(0, i + num_lines_to_shift, i + num_lines_to_shift + 1, false, {line_text})
---     end
---
---     -- Append the text to the buffer
---     -- vim.api.nvim_buf_set_lines(current_buf, -1, -1, true, {text})
--- end
-
--- Map the function to a key combination
--- vim.api.nvim_set_keymap('n', '<Leader>cq', [[:lua Garmin_Comment("Hello, NeoVim buffer!")<CR>]], { noremap = true, silent = true })
-
-
--- map ev to change/edit init.lua in split screen
+-- map ev to change/edit init.lua in a new tab
 -- This is the unix path!
-map('n', '<leader>ev', ':vsplit ~/AppData/Local/nvim/init.lua<CR>', {})
+map('n', '<leader>ev', ':tabnew ~/AppData/Local/nvim/init.lua<CR>', {})
 map('n', '<leader>sv', ':so ~/AppData/Local/nvim/init.lua<CR>', {})
 map('n', '<leader>ep', ':vsplit ~/.profile<CR>', {})
 

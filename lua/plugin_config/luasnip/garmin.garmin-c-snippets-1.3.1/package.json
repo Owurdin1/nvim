@@ -1,0 +1,51 @@
+{
+	"name": "garmin-c-snippets",
+	"displayName": "Garmin C Snippets",
+	"description": "Snippets for Garmin C code",
+	"version": "1.3.1",
+	"author": "Joel Spadin <joel.spadin@garmin.com>",
+	"publisher": "Garmin",
+	"repository": {
+		"type": "git",
+		"url": "ssh://gerrit.consumer.garmin.com:29418/tools/vscode/consumer-extensions",
+		"directory": "extensions/c-snippets"
+	},
+	"engines": {
+		"vscode": "^1.33.0"
+	},
+	"categories": [
+		"Snippets"
+	],
+	"keywords": [
+		"consumer",
+		"snippets"
+	],
+	"contributes": {
+		"snippets": [
+			{
+				"language": "c",
+				"path": "./snippets/snippets.json"
+			},
+			{
+				"language": "cpp",
+				"path": "./snippets/snippets.json"
+			}
+		]
+	},
+	"scripts": {
+		"prepublishOnly": "npm run package",
+		"package": "vsce package -o extension.vsix"
+	},
+	"devDependencies": {
+		"vsce": "^1.70.0"
+	},
+	"publishConfig": {
+		"registry": "https://npm-vscode-publish.garmin.com"
+	},
+	"files": [
+		"extension.vsix"
+	],
+	"__metadata": {
+		"installedTimestamp": 1692811819672
+	}
+}
