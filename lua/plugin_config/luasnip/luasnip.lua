@@ -17,3 +17,14 @@ ls.add_snippets(nil, {
         },
     })
 
+-- ls.add_snippets(nil, {
+--     snip({
+--         trig = "utldbgprint",
+--         namr = "Debug print",
+--         dscr = "UTL_dbg_printf",
+--         },
+--         {
+--
+--         }
+--         }),
+--     })

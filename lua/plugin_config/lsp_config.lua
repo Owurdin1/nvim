@@ -20,6 +20,13 @@ lsp.on_attach(function(client, bufnr)
 
    vim.keymap.set('n', '<leader>gr', require('telescope.builtin').lsp_references, {buffer = true})
 
+   vim.keymap.set('n', '<leader>gI', require('telescope.builtin').lsp_incoming_calls, {buffer = true})
+   vim.keymap.set('n', '<leader>go', require('telescope.builtin').lsp_outgoing_calls, {buffer = true})
+   vim.keymap.set('n', '<leader>gD', require('telescope.builtin').lsp_definitions, {buffer = true})
+   vim.keymap.set('n', '<leader>gt', require('telescope.builtin').lsp_type_definitions, {buffer = true})
+   vim.keymap.set('n', '<leader>gi', require('telescope.builtin').lsp_implementations, {buffer = true})
+   vim.keymap.set('n', '<leader>gk', require('telescope.builtin').lsp_document_symbols, {buffer = true})
+
 
     vim.keymap.set('n', '<leader>rn', function() vim.lsp.buf.rename() end, opts)
     vim.keymap.set('i', '<C-h>', function() vim.lsp.buf.signature_help() end, opts)

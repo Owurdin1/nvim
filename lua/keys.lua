@@ -49,6 +49,7 @@ map('n', '<leader><space>', ':noh<cr>', {})
 -- Set F1 to show current directory
 map('n', '<leader>pd', ':pwd<cr>', {})
 map('n', '<leader>wd', ':cd d:/git/gtr/sw_dev<cr>', {})
+map('n', '<leader>td', ':cd d:/git/gtr/sw_tests<cr>', {})
 map('n', '<leader>cd', ':cd %:h<cr>', {})
 
 -- [[ nvim-tree keymaps ]]
@@ -61,10 +62,12 @@ map('n', '<c-n>', ':NvimTreeFindFileToggle<CR>', {})
 map('n', '<leader>ff', ":Telescope find_files<cr>", {})
 map('n', '<leader>fg', ":Telescope live_grep<cr>", {})
 map('n', '<leader>fb', ":Telescope buffers<cr>", {})
+map('n', '<leader>bf', ":Telescope current_buffer_fuzzy_find<cr>", {})
 map('n', '<leader>fs', ":Telescope grep_string<cr>", {})
 map('n', '<leader>gc', ":Telescope git_commits<cr>", {})
 map('n', '<leader>gf', ":Telescope git_files<cr>", {})
-map( 'n', '<leader>fh', ':Telescope help_tags<CR>', {} )
+map('n', '<leader>fh', ':Telescope help_tags<CR>', {})
+map('n', '<leader>fd', ':Telescope lsp_definitions<CR>', {})
 
 --[[ aerial keymaps ]]
 map('n', '<leader>yy', ":AerialToggle<cr>", {})

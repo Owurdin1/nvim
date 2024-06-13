@@ -56,6 +56,7 @@ return require('packer').startup(function(use)
     use 'marko-cerovac/material.nvim'
     use 'vimwiki/vimwiki'
     use 'neanias/everforest-nvim'
+    use 'cappyzawa/trim.nvim'
 
     use {
         'nvim-telescope/telescope.nvim',

@@ -189,6 +189,11 @@ _G.packer_plugins = {
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["trim.nvim"] = {
+    loaded = true,
+    path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\trim.nvim",
+    url = "https://github.com/cappyzawa/trim.nvim"
+  },
   undotree = {
     loaded = true,
     path = "C:\\Users\\wurdingero\\AppData\\Local\\nvim-data\\site\\pack\\packer\\start\\undotree",
