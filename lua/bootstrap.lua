@@ -31,7 +31,7 @@ return require('packer').startup(function(use)
             }
         }
 
-    use { 
+    use {
         'L3MON4D3/LuaSnip',
         tag = 'v2.0.0',
         run = 'make install_jsregexp',
@@ -57,6 +57,7 @@ return require('packer').startup(function(use)
     use 'vimwiki/vimwiki'
     use 'neanias/everforest-nvim'
     use 'cappyzawa/trim.nvim'
+    use 'easymotion/vim-easymotion'
 
     use {
         'nvim-telescope/telescope.nvim',

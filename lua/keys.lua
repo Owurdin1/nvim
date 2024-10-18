@@ -25,6 +25,11 @@ map('n', '<leader>j', '<c-w>j', {})
 map('n', '<leader>k', '<c-w>k', {})
 map('n', '<leader>l', '<c-w>l', {})
 
+-- Set easymotion plugin keys
+-- let g:EasyMotion_do_mapping = 0 -- Disable default mappings
+
+map('n', '<leader>s', ':easymotion-overwin-f<cr>', {})
+
 -- Set the window movement keys
 map('n', '<leader>H', '<c-w>H', {})
 map('n', '<leader>J', '<c-w>J', {})
