@@ -30,7 +30,7 @@ require('telescope').setup {
 
         live_grep = {
             glob_pattern = {
-                "!tmpl*.h", 
+                "!tmpl*.h",
                 "!tmpl*.c",
                 "!*.ipynb",
                 "!*.vcxproj.*",

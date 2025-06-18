@@ -17,7 +17,7 @@ opt.showcmd = true 					-- bool: Turn on the show command
 opt.encoding = 'utf8' 					-- str: Show the sign column
 opt.fileencoding = 'utf8'				-- str: File encoding to use
 
---[[ Theme ]] 
+--[[ Theme ]]
 opt.syntax = 'ON' 					-- str: Allow syntax highlighting
 opt.termguicolors = true 				-- bool: If term supports ui colors then enable
 opt.conceallevel = 0 					-- num: Option for conceal level
@@ -34,7 +34,8 @@ vim.g.material_style = "lighter"
 -- vim.cmd('colorscheme material')                         -- str: Set colorscheme
 -- vim.cmd('colorscheme neon')                             -- str: Set colorscheme
 -- vim.cmd( 'colorscheme torte' )                          -- str: Set colorscheme
-vim.cmd( 'colorscheme delek' )                          -- str: Set colorscheme
+-- vim.cmd( 'colorscheme delek' )                          -- str: Set colorscheme
+vim.cmd( 'colorscheme zaibatsu' )                          -- str: Set colorscheme
 
 --[[ Search ]]
 opt.ignorecase = true					-- bool: Ignore case in search in patterns
@@ -42,21 +43,21 @@ opt.smartcase = true 					-- bool: Override ignore case if search contains capit
 opt.incsearch = true 					-- bool: Use incremental search
 opt.hlsearch = true 					-- bool: Highlight saerch matches
 
---[[ Whitespace ]] 
+--[[ Whitespace ]]
 opt.expandtab = true					-- bool: Use spaces instead of tabs
 opt.shiftwidth = 4					-- num: Size of an indent
 opt.softtabstop = 4 					-- num: Number of spaces tabs count for in insert mode
 opt.smartindent = true 					-- bool: Set smart indent
 opt.autoindent = true 					-- bool: Set auto indent feature
 
---[[ Splits Window Options ]] 
+--[[ Splits Window Options ]]
 opt.splitright = true                                   -- bool: Place new window to the right of current one
 opt.splitbelow = true                                   -- bool: Place new window below the current one
 
 --[[ Status ]]
 opt.laststatus = 2                                      -- num: Option for the status bar presence
 
---[[ Wildmenu ]] 
+--[[ Wildmenu ]]
 opt.wildmenu = true                                     -- bool: Enable wildmenu option
 
 --[[ Error Options ]]
@@ -72,7 +73,7 @@ opt.linebreak = true                                    -- bool: Set wrapping to
 opt.backspace = 'indent,eol,start'                      -- str: Set the backspace to behave as expected
 
 --[[ Diff Options ]]
-opt.diffopt = 'vertical,internal,filler,closeoff,followwrap' 
+opt.diffopt = 'vertical,internal,filler,closeoff,followwrap'
 
 --[[ Cursorline options ]]
 opt.cursorline = true

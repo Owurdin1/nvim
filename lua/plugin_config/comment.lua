@@ -8,7 +8,7 @@ function Garmin_Comment()
     local cursor_line = vim.fn.line('.')
     local cursor_col = vim.fn.virtcol('.')
     local indent = vim.fn.indent(cursor_line - 1)
-    local max_width = 77
+    local max_width = 78
 
     local comment_start = string.rep(' ', indent) .. '/*'
     local comment_body = string.rep(' ', #comment_start)

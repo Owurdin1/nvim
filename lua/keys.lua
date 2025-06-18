@@ -53,8 +53,8 @@ map('n', '<leader><space>', ':noh<cr>', {})
 
 -- Set F1 to show current directory
 map('n', '<leader>pd', ':pwd<cr>', {})
-map('n', '<leader>wd', ':cd d:/git/gtr/sw_dev<cr>', {})
-map('n', '<leader>td', ':cd d:/git/gtr/sw_tests<cr>', {})
+map('n', '<leader>wd', ':cd d:/git/gtx/dev<cr>', {})
+map('n', '<leader>td', ':cd d:/git/gtx/test<cr>', {})
 map('n', '<leader>cd', ':cd %:h<cr>', {})
 
 -- [[ nvim-tree keymaps ]]
